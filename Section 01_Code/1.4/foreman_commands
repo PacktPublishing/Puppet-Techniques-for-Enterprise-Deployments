@@ -1,0 +1,1 @@
+foreman-installer --no-enable-foreman-proxy --puppet-server=false --foreman-proxy-puppet=false --foreman-proxy-puppetca=false --puppet-server-ca=false --no-enable-puppet

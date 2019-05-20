@@ -1,0 +1,5 @@
+---
+:default_hostgroup:
+  :facts_map:
+    "web_server":
+      "fqdn": "puppet*"

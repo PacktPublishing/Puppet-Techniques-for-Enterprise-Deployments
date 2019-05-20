@@ -1,0 +1,23 @@
+#!/usr/bin/env ruby
+
+forge "https://forgeapi.puppetlabs.com"
+
+mod 'hardening-ssh_hardening'
+mod 'hardening-os_hardening'
+mod 'hardening-mysql_hardening'
+
+mod 'hardening-apache_hardening',
+  :git => 'git://github.com/dev-sec/puppet-apache-hardening.git'
+
+mod 'hardening-nginx_hardening',
+  :git => 'git://github.com/dev-sec/puppet-nginx-hardening.git'
+
+mod 'hardening-postgres_hardening',
+  :git => 'git://github.com/dev-sec/puppet-postgres-hardening.git'
+
+mod 'netmanagers-tcpwrappers'
+mod 'puppetlabs-firewall'
+mod 'netmanagers-fail2ban'
+mod 'ghoneycutt-pam'
+mod 'puppetlabs-denyhosts'
+mod 'saz-sudo'

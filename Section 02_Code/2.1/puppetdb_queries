@@ -1,0 +1,4 @@
+curl -G 'http://localhost:8080/pdb/query/v4/reports'
+curl -G 'http://localhost:8080/pdb/query/v4/reports' | jq .
+curl -G 'http://localhost:8080/pdb/query/v4/reports' --data-urlencode 'query=["=", "certname", "app-prod-001.local"]' | jq .
+curl -G 'http://localhost:8080/pdb/query/v4/reports' --data-urlencode 'query=["=", "certname", "app-prod-001.local"]' | jq .[].receive_time

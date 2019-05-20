@@ -1,0 +1,24 @@
+#
+# puppet_proxy_legacy module is used for puppet versions prior to 4.0
+#
+# puppet_proxy_legacy is configured automatcially based on
+# :puppet_version setting in smart-proxy's puppet.yml configuration file.
+#
+---
+:puppet_conf: /etc/puppetlabs/puppet/puppet.conf
+#
+# Override use of Puppet's API to list environments, by default it will use only if
+# environmentpath is given in puppet.conf, else will look for environments in puppet.conf
+# (Puppet versions prior to 4.0 only)
+:use_environment_api: true
+#
+# URL of the puppet master itself for API requests. Required if puppet_use_environment_api is set to true.
+:puppet_url: https://puppetserver.local:8140
+#
+# SSL certificates used to access the environment API. Required if puppet_use_environment_api is set to true.
+:puppet_ssl_ca: /etc/puppetlabs/puppet/ssl/certs/ca.pem
+:puppet_ssl_cert: /etc/puppetlabs/puppet/ssl/certs/puppetserver.local.pem
+:puppet_ssl_key: /etc/puppetlabs/puppet/ssl/private_keys/puppetserver.local.pem
+#
+# Enable/disable puppet class cache
+#:use_cache: true

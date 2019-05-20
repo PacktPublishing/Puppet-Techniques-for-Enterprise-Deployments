@@ -1,0 +1,1 @@
+openssl req -noout -text -in /etc/puppetlabs/puppet/ssl/ca/requests/web-prod-001.local.pem

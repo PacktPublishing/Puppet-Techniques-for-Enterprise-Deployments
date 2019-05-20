@@ -1,0 +1,9 @@
+---
+to_name: 'Anirban Saha'
+from_name: 'Anirban Saha'
+from_address: 'FROM_EMAIL_ADDRESS'
+to_address: 'TO_EMAIL_ADDRESS'
+smtp_server: 'smtp.gmail.com'
+smtp_domain: 'gmail.com'
+smtp_username: 'EMAIL_ADDRESS'
+smtp_password: 'PASSWORD'
